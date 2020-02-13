@@ -4,7 +4,7 @@ class CountdownTimer {
     constructor(obj) {
         this.selector = obj.selector;
         this.targetDate = obj.targetDate;
-        this.time = this.targetDate.getTime() - Date.now()
+        this.startTimer()
     }
     getSeconds () {
         return Math.floor(
@@ -77,4 +77,3 @@ const timer1 = new CountdownTimer({
     targetDate: new Date('Jul 17, 2021'),
 });
 
-timer1.startTimer();
